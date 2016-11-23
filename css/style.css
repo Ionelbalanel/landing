@@ -1,0 +1,642 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+    font-family: 'Quicksand', sans-serif;  /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+
+
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+
+.center-block-main{
+	max-width:1170px;
+	margin:0 auto;
+}
+
+
+header{
+	background:#00C6F2; 
+}
+
+.header-top{
+	padding:25px;
+}
+
+.logo{
+	font-size:2em;
+	float:left;
+	color:#fff;
+	font-weight:bold;
+}
+
+
+.menu{
+	float:left;
+margin-top:12px;
+margin-left:150px;
+}
+
+.menu li{
+	float:left;
+	margin-right:30px;
+	font-weight:600;
+}
+
+.menu li a{
+color:#fff;
+text-decoration:none;	
+
+}	
+
+.menu li a:hover{
+ color:#fff;
+background:#33DE8A;
+
+
+}	
+
+
+.head-form{
+	float:right;
+	padding-top:8px;
+}
+
+.head-form input[type=text]{
+	padding:4px;
+	border-radius:15px;
+	border:none;
+	
+}
+
+.my-slider{
+}
+	.my-slider ul li{
+		position:relative; 
+		color:#fff; 
+		border-bottom:4px solid #4bcaff;
+		font-size:0;
+	}
+	
+
+.slide-text-wrapper{
+		position:absolute; top:35%; left:44%; max-width:700px;
+		
+	}	
+
+	
+.my-slider ul li h2{
+		font-size:48px;
+		font-weight:300; 
+		line-height:1.1; 
+		margin-bottom:20px;
+	
+	}	
+	
+	
+
+	
+.my-slider ul li img{
+		width:100%;
+	}	
+
+	a.download-btn{
+		color:#fff; 
+		display:inline-block; 
+		padding:15px 90px; 
+		border:2px solid #fff;
+		border-radius:30px; 
+		font-size:20px;
+		text-decoration:none; 
+		font-weight:600; 
+		margin-top:30px;
+		background:#00C3EE;
+		text-transform:uppercase;
+	}
+	a:hover.download-btn{
+		color:#fff;
+		border:2px solid #4bcaff; 
+	}
+
+	.unslider-nav{
+		max-width:1170px; 
+		margin:-19px auto 0 auto;
+		position:relative; 
+		top:-15px;
+	}
+	
+.block3-main{
+	margin-top:60px;
+
+}	
+	
+.block3-main article{
+	width:30%; float:left; margin-left:5%; text-align:center;
+}	
+
+.block3-main article:first-child{
+	margin-left:0;
+}	
+
+.block3-main article img{
+		display:block; margin:0 auto 20px auto;
+	}
+
+.block3-main h2{
+	color:#1E2020;
+	font-weight:bold;
+	font-size:1.2em;
+	padding-top:14px;
+}
+
+.block3-main p{
+font-size:1em;
+color:#1E2020;
+font-family: 'Quicksand', sans-serif;
+padding-top:14px;
+}
+
+
+
+.block4-section{
+	margin-top:60px; 
+	padding:70px 0 70px 0;
+	background:#23D4FA;
+
+}
+
+
+
+	.block4-main article{
+			width:23%; 
+			margin-left:2.6666666666666666666666666666667%; 
+			float:left;
+			text-align:center;
+			background:#fff;
+			padding-bottom:10px;
+			border-radius:10px;
+			box-shadow:0 0 10px rgba(0,0,0,0.5);
+		}
+.block4-main article:first-child{
+			margin-left:0;
+		}
+		.block4-main article img{
+			display:block;
+			margin:0 auto;
+		}
+		
+		
+.block4-main article h2{
+	padding:20px 0 5px 0;
+	color:#1E2020;
+	font-size:1.3em;
+	  font-family: 'Quicksand', sans-serif; 
+	  font-weight:bold;
+}	
+
+.block4-main article span{
+color:#1E2020;
+font-weight:bold;
+}	
+
+.block4-main article p{
+padding:5px 7px 5px 7px;
+color:#000000;
+padding-top:20px;
+}	
+
+
+.block4-main article a{
+	background:#00C6F2;
+	text-decoration:none;
+	color:#fff;
+	width:100px;
+	height:200px;
+	border-radius:19px;
+	line-height:4;
+	padding:10px 60px 10px 60px;
+	
+}	
+
+
+.block5-section{
+	background:#1E2020;
+	padding-top:80px;
+	
+}
+
+.block5-main{
+	padding-bottom:100px;
+}
+
+.block5-main article{
+	float:left;
+	width:49%;
+}
+
+.block5-main article h1{
+	color:#FFFFFF;
+	font-size:2em;
+	 font-family: 'Quicksand', sans-serif; 
+}
+
+.block5-main article h2{
+	color:#B8B8B8;
+	padding-top:10px;
+	line-height:1;
+	text-transform:uppercase;
+}
+
+
+.block5-main article p{
+	color:#ACACAC;
+	font-size:14px;
+	padding-top:12px;
+	line-height:1.5;
+}	
+
+ul.ips{
+	list-style-image:url(../images/arrow.png);
+	margin-top:20px;
+	line-height:2.2;
+	font-size:14px;
+	font-weight:bold;
+	color:#E4FBEF;
+	list-style-position:inside;
+   
+}
+
+ .ips li:hover{
+	background:#33DE8A;
+	border-radius:15px;
+	padding-left:20px;
+}
+
+.hove div{
+	float:right;
+	padding:20px 0 0 25px;
+}
+
+
+.block6-section{
+	text-align:center;
+	margin-top:60px;
+}
+
+
+.block6-section h2{
+	color:#000000;
+	font-size:2em;
+	font-weight:bold;
+}
+
+
+.block6-section p{
+	color:#000000;
+	padding-top:25px;
+	font-weight:bold;
+	font-family: 'Quicksand', sans-serif; 
+}
+
+.block5-main{
+	padding-top:70px;
+}
+
+.block5-main article{
+	width:47%;
+	float:left;
+}
+
+.phot div{
+	width:47%;
+	float:right;
+	line-height:4;
+}
+
+
+.today img{
+	width:100%;
+	height:550px;
+}
+
+
+
+
+		.contakt-main{
+	position:relative; height:550px;
+}
+
+.contakt-block{
+		position:absolute; bottom:100px;width:320px;  left:50%;  margin-left:-160px; background:rgba(75,202,255,0.7); border-radius:5px; padding:30px 30px 10px 30px; box-sizing:border-box;
+	}
+	
+	
+		.contakt-block h2{
+		color:#fff; font-size:2.25em; text-align:center; margin-bottom:20px; font-weight:600;
+	}
+	
+.ftrmail{
+		width:100%; color:#999; font-size:0.75em; margin-bottom:15px; padding:7px 20px; border:none; box-sizing: border-box; border-radius:5px; text-align:center;
+	}
+	.ftrtext{
+		width:100%; font-size:0.75em; color:#999; margin-bottom:15px; padding:7px 20px; border:none; box-sizing: border-box; border-radius:5px; text-align:center;
+	}
+	.ftrsubmit{
+		font-size:0.875em; border:none; background:#414042; padding:10px 40px; color:#72b3cc; cursor:pointer; border-radius:5px; display:block; margin:0 auto;
+	}
+	
+
+	
+.block7-section{
+	margin-top:50px;
+}	
+	
+.block6-main  article{
+	width:23%;
+	float:left;
+		margin-left:2.6666666666666666666666666666667%; 
+}
+
+.block6-main article:first-child{
+			margin-left:0;
+		}	
+		
+.block6-main h1{
+	color:#00C6F2;
+	font-size:2.2em;
+	font-weight:bold;
+}		
+
+.block6-main h3{
+	color:#000000;
+	font-weight:bold;
+}
+
+.block6-main li{
+	list-style:none;
+	padding-top:10px;
+	color:#A9A9A9;
+}
+
+.footer{
+	background:#00C6F2;
+	margin-top:90px;
+	padding-top:30px;
+}
+
+.footer-content p{
+	float:left;
+	color:#ffffff;
+}
+
+.footer-content li{
+	list-style:none;
+	float:right;
+	padding-left:15px;
+}
+
+@media screen and (max-width:945px){
+	
+	.block4-main article{
+		width:45%;
+		margin:0 2.5% 30px 2.5%; 
+		float:left;
+		
+	}
+	
+   .block4-main article:first-child{
+			margin:0 2.5% 30px 2.5%;
+		}		
+}
+
+
+@media screen and (max-width:830px){
+	
+	.my-slider ul li h2{
+		font-size:30px;
+		margin-top:-60px;
+	}	
+	
+		a.download-btn{
+		color:#fff; 
+		display:inline-block; 
+		padding:15px 90px; 
+		border:2px solid #fff;
+		border-radius:30px; 
+		font-size:20px;
+		text-decoration:none; 
+		font-weight:600; 
+		
+		background:#00C3EE;
+		text-transform:uppercase;
+	}
+	
+	
+}
+
+
+@media screen and (max-width:755px){
+
+
+ .block5-main article{
+	float:left;
+	width:100%;
+		margin:0 2.5% 30px 2.5%;
+}
+
+.block6-main article{
+	  
+	  width:45%;
+		margin:0 2.5% 30px 2.5%; 
+		float:left;
+	  
+}
+
+  .block6-main article:first-child{
+			margin:0 2.5% 30px 2.5%;
+		}	
+.hove{
+margin-right:80px;	
+}
+		
+	
+}	
+
+@media screen and (max-width:600px){
+ 	
+	.block3-main article{
+	width:90%; float:none; margin-left:5%; text-align:center;
+}	
+
+.block3-main article:first-child{
+			margin:0 2.5% 30px 2.5%;
+		}	
+		
+	.menu{
+		float:right;
+	}	
+	
+	.footer-content p{
+	float:none;
+	text-align:center;
+	
+}
+	
+}	
+
+
+@media screen and (max-width:500px){
+	
+	.my-slider ul li h2{
+		font-size:20px;
+		margin-top:-20px;
+		
+	}	
+	
+	
+	.block4-main article{
+		width:95%;
+		margin:0 2.5% 30px 2.5%; 
+		float:left;
+		
+	}
+	
+   .block4-main article:first-child{
+			margin:0 2.5% 30px 2.5%;
+		}	
+	
+}	
+
+@media screen and (max-width:400px){
+	.block6-main article{
+			width:70%;
+		margin:0 2.5% 30px 2.5%; 
+		
+	}
+	
+	 .block6-main article:first-child{
+			margin:0 2.5% 30px 2.5%;
+		}
+}	
+
+
+
+
+/*
+
+@media screen and (max-width:1000px){
+	
+}
+
+@media screen and (max-width:900px){
+	
+}
+@media screen and (max-width:740px){
+	
+}
+@media screen and (max-width:600px){
+	
+}
+@media screen and (max-width:480px){
+
+}
+@media screen and (max-width:410px){
+	
+}
+@media screen and (max-width:360px){
+	
+}		
+
+
+*/
